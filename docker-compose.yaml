@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  database:
+    image: postgres
+    environment:
+      POSTGRES_DB: queries_challenge
+      POSTGRES_PASSWORD: docker
+    ports:
+      - "5432:5432"
